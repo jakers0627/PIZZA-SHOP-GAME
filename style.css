@@ -1,0 +1,87 @@
+body {
+margin: 0;
+background-color: #ffe8cc;
+font-family: 'Comic Neue', sans-serif;
+}
+
+#game-container {
+position: relative;
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+background-color: #fff1dc;
+}
+
+#background {
+width: 100%;
+height: 100%;
+object-fit: cover;
+position: absolute;
+z-index: 0;
+}
+
+#box-container {
+position: absolute;
+bottom: 120px;
+left: 60px;
+display: flex;
+gap: 30px;
+z-index: 2;
+}
+
+.box {
+width: 120px;
+height: auto;
+cursor: pointer;
+transition: transform 0.2s ease;
+}
+
+.box:hover {
+transform: scale(1.1);
+}
+
+.hidden {
+display: none;
+}
+
+#chef {
+position: absolute;
+bottom: 100px;
+right: 40px;
+width: 180px;
+z-index: 3;
+}
+
+#dialogue-box {
+position: absolute;
+bottom: 0;
+width: 100%;
+background: #fff8ee;
+padding: 20px;
+font-size: 22px;
+text-align: center;
+border-top: 4px solid #ffb347;
+z-index: 4;
+box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+}
+
+#dialogue-text {
+margin-bottom: 12px;
+color: #444;
+}
+
+#next-btn {
+padding: 10px 25px;
+background-color: #ff9f1c;
+border: none;
+color: white;
+border-radius: 12px;
+font-size: 18px;
+font-family: 'Comic Neue', sans-serif;
+cursor: pointer;
+transition: background-color 0.2s ease;
+}
+
+#next-btn:hover {
+background-color: #ff8800;
+}
